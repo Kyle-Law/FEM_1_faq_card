@@ -1,0 +1,228 @@
+/*
+	Standard CSS Reset
+	This is used to account for differences in browsers.
+	Without a reset stylesheet there could be differences
+	between browsers when loading your html website.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --dark-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --bg-gradient: linear-gradient(
+    to bottom right,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  --font-very-dark-blue: hsl(237, 12%, 33%);
+  --font-dark-blue: hsl(240, 6%, 50%);
+  --divider: hsl(240, 5%, 91%);
+  --font-size: 12px;
+  --font-family: "Kumbh Sans";
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  background-image: var(--bg-gradient);
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  grid-template-rows: 1fr max-content;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fcfcff;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  height: 70vh;
+  width: 70%;
+}
+
+.faq-container {
+  font-size: 10px;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+}
+
+.faq-container p {
+  font-size: 1.1rem;
+}
+
+.faq-container h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.faq-item {
+  cursor: pointer;
+  width: 80%;
+}
+
+.faq-item-header {
+  display: grid;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.faq-item-header img {
+  transition: 0.5s;
+}
+
+.hide {
+  display: none;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.faq-item {
+  padding: 5px 0;
+  border-bottom: 2px solid var(--divider);
+}
+
+.faq-item p {
+  padding: 5px 0;
+}
