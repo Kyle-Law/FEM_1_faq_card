@@ -7,9 +7,11 @@ questions.forEach(question => {
     if (img.classList.contains('flip')) {
       img.classList.remove('flip')
       answer.classList.remove('hide')
+      question.classList.add('active')
     } else {
       img.classList.add('flip')
       answer.classList.add('hide')
+      question.classList.remove('active')
     }
   })
 });

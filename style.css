@@ -196,7 +196,8 @@ body {
 
 .faq-item {
   cursor: pointer;
-  width: 80%;
+  width: 90%;
+  color: var(--font-dark-blue);
 }
 
 .faq-item-header {
@@ -208,6 +209,11 @@ body {
 
 .faq-item-header img {
   transition: 0.5s;
+}
+
+.active {
+  color: var(--font-very-dark-blue);
+  font-weight: 700;
 }
 
 .hide {
